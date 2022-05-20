@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel ='icon' href="img/icon.svg"> 
+    
+
+    <title>Dice Game</title>
+</head>
+
+<body>
+
+    <!-- container -->
+    <div class="wrapper clearfix">
+         <!-- Edit Names-->
+        <div class="container bottom">
+            <button type="button" class="butn"
+                onClick="editNames()">
+                Edit Names
+            </button>
+        </div>
+
+        <!-- player1-->
+        <div class="player-0-panel active">
+            <div class="player-name1" id="name-0">Player 1</div> <!-- player name-->
+            <div class="player-score" id="score-0">50</div> <!-- players score-->
+            <div class="player-current-box">
+                <!-- playersbox-->
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">10</div>
+            </div>
+
+        </div>
+
+        <!-- player2-->
+        <div class="player-1-panel">
+            <div class="player-name2" id="name-1">Player 2</div> <!-- player name-->
+            <div class="player-score" id="score-1">90</div> <!-- players score-->
+            <div class="player-current-box">
+                <!-- playersbox-->
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+       
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+        <input type="text" id="settingScoreInput" placeholder="Set a winning score"></input>
+
+
+
+        <img src="img/dice-5.png" alt="Dice" class="dice">
+        <img src="img/dice-5.png" alt="Dice two" class="dice2">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
