@@ -59,7 +59,7 @@ body {
 }
 
 .active {
-    background-color: #f7f7f7;
+    background-color: rgba(231, 158, 99, 0.4);
 }
 
 .active .player-name {
